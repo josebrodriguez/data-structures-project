@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Account Manager</title>
+		<link rel="stylesheet" href="styles_3.css">
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body style="background-color:teal;">
+			<div class="container">
+
+				<div class="intro">
+          <h1 style="color: teal;">SPACE</h1>
+          <hr>
+					<h1 style="color: black;">Welcome Back!</h1>
+          <hr>
+        </div>
+        <div class="manage">
+          <h1 style="color: black;">Manage Account</h1>
+  				<form action="/store_new" method="post">
+  					
+					Store new Password:
+					<label for="StorePass_web" style="color: black">
+  						 Website: <input name="website" id="StorePass_web"/>
+  					</label>
+					<label for="StorePass_pass" style="color: black">
+						Password: <input name="password" id="StorePass_pass" />
+					</label>
+					
+            		<input id="Store-but" type="submit" value="Store">
+				</form>
+            <h4></h4>
+				<form action="/retrieve" method="post">
+					Retrieve Current Password:
+					<label for="RetrievePass" style="color: black">
+  						Website: <input type="text" name="website_retreive" id="Retrieve_Pass">
+  					</label>
+            		<input id="Retrieve-but" type="submit" value="Retrieve">
+				</form>
+            <h4></h4>
+				<form action="/change" method="post">
+					Change Current Password:
+					<label for="ChangePass_web" style="color: black">
+  						Website: <input name="website_change" id="Change_Pass_web">
+  					</label>
+					<label for="ChangePass_pass" style="color: black">
+						New Password: <input name="password_change" id="Change_Pass_pass">
+					</label>
+            		<input id="Change-but" type="submit" value="Change">
+				</form>
+            <h4></h4>
+				<form action="/view" method="post">
+					View All Passwords:
+            		<input id="View-but" type="submit" value="View">
+  				</form>
+
+				<form action="/logout" method="post">
+					Log out:
+					<input id="View-but" type="submit" value="Log out">
+				</form>
+  			</div>
+			</div>
+	</body>
+</html>
