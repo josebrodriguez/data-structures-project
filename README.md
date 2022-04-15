@@ -1,2 +1,2 @@
-# data_structures_project
-This is the Final Project for Data Structures
+# data-structures-project
+Data Structures CSE 20312 Final Project from Fall 2021
